@@ -1,0 +1,52 @@
+<h1>Jstest#index</h1>
+<p>Find me in app/views/jstest/index.html.erb</p>
+
+<div class="container">
+  <p class="test">안녕하세요!</p>
+  
+  <div class="box1">
+    1
+  </div>
+  <div class="box2">
+    2
+  </div>
+  <div class="box3">
+    3
+  </div>
+  <button id="colorbutton">
+    버튼
+  </button>  
+</div>
+
+<style>
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+  }
+  
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+  
+  .box3 {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+  }
+</style>
+
+<script>
+  $("#colorbutton").on("click", function () {
+    $(".box1").css("background-color", "red")
+    $(".box1").css("width", "200px")
+    
+    $(".box2").css("background-color", "orange")
+    $(".box2").css("width", "200px")
+    
+    $(".box3").css("background-color", "yellow")
+    $(".box3").css("width", "200px")    
+  })
+</script>

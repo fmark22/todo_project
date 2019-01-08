@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="jumbotron" align="center">
+    <h1 class="display-4">Todos</h1>
+    <p class="lead">simple APP</p>
+    <hr class="my-4">
+    <p>자신의 할일을 적어봅시다!</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Create</a>
+    <p><%= link_to '로그아웃', destroy_user_session_path, method: :delete %>
+  </div>
+    <%= yield %>
+  </body>
+</html>
